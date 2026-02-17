@@ -24,9 +24,7 @@ Nitrogen Dioxide (NO₂) readings from the India Air Quality dataset are transfo
 
 The fitted density has the form:
 
-\[
-\hat{p}(z) = c \, e^{-\lambda (z - \mu)^2}
-\]
+p̂(z) = c · e^(−λ (z − μ)²)
 
 ---
 
@@ -45,19 +43,19 @@ The fitted density has the form:
 
 Each original observation \(x\) is mapped to a new variable \(z\) using:
 
-\[
+$$
 z = x + a_r \sin(b_r x)
-\]
+$$
 
 where the roll-number-dependent constants are defined as:
 
-\[
+$$
 a_r = 0.05 (r \bmod 7)
-\]
+$$
 
-\[
+$$
 b_r = 0.3 (r \bmod 5 + 1)
-\]
+$$
 
 For roll number **102303324**, the computed values are:
 
@@ -80,13 +78,13 @@ After removing missing values and computing statistics from the transformed vari
 
 The parameters are derived using:
 
-\[
+$$
 \lambda = \frac{1}{2\sigma^2}
-\]
+$$
 
-\[
+$$
 c = \sqrt{\frac{\lambda}{\pi}}
-\]
+$$
 
 ---
 
@@ -110,9 +108,7 @@ After the nonlinear transformation, the distribution appears smoother. The fitte
 
 ## Final Estimated Density Function
 
-\[
-\hat{p}(z) = 0.021612327098739347 \; e^{-0.0014674149402736612 (z - 25.811134492949602)^2}
-\]
+p̂(z) = 0.02327161238461796 · e^(−0.0017013858710854023 (z − 23.00611965469464)²)
 
 ---
 
